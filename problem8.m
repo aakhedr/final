@@ -1,3 +1,5 @@
+
+%% problem8
 train = load('train.txt');
 X = train(:, 2:3);
 X = transform(X);
