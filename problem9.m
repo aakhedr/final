@@ -2,7 +2,7 @@
 %%problem9
 train = load('train.txt');
 X = train(:, 2:3);
-[m, n] = size(X);
+[m, ~] = size(X);
 X_transform = transform(X);
 
 X = [ones(m, 1) X];
@@ -10,7 +10,7 @@ X_transform = [ones(m, 1) X_transform];
 
 test = load('test.txt');
 Xtest = test(:, 2:3);
-[k, l] = size(Xtest);
+[k, ~] = size(Xtest);
 Xtest_transform = transform(Xtest);
 
 Xtest = [ones(k, 1) Xtest];
