@@ -18,7 +18,7 @@ I = eye(size(X, 2)); 		I(1, 1) = 0;
 output = [1 5];
 
 for i = 1 : length(output)
-	fprintf('Classifying %f versus all\n', output(i))
+	fprintf('Classifying %f versus all\n', output(i));
 	y = train(:, 1);
 	y(y~=output(i)) = -1;
 	y(y==output(i)) = 1;
